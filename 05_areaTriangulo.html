@@ -6,11 +6,16 @@
     */
 
     //Entrada
-
+    const base = Number(prompt(`Qual a base do seu triangulo?`))
+    const altura = Number(prompt(`Qual a altura do seu triangulo?`))
+    let area = (base * altura) / 2
 
     //Processamento
-
+    function areaTri (base, altura, area) {
+        alert(`A area do seu triangulo eh de ${area}`)
+    }
 
     //Saída
+    areaTri (base, altura, area)
 
 </script>
