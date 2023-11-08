@@ -6,10 +6,17 @@
 
     //Entrada
 
-
     //Processamento
+    function fatorial(numero) {
+        if (numero == 1) {
+            return 1;
+        } else {
+            return numero * fatorial(numero - 1);
+        }
+    }
+    let resultado = fatorial(5);
 
-
-    //Saída
+    //Saida
+    alert(resultado);
 
 </script>
