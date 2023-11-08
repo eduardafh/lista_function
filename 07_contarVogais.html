@@ -7,15 +7,19 @@
     */
 
     //Entrada
-    const nome = prompt(`Informe uma palavra`).trim()
-    let numVogais = 0
+    const palavra= prompt(`Informe uma palavra`).toLowerCase();
+    let Numvogais= 0;
 
     //Processamento
-    for (let index = 0; ; index++) {
-        const element = array[index];
-        
+    function vogais() {
+        for (let letra of palavra) {
+            if(letra=="a" || letra=="e" || letra=="i" || letra=="o" || letra=="u")
+            Numvogais++;
+        }
+        return Numvogais;
     }
+    //Saida
+    alert(`A quantidade de vogais é de ${vogais()}`);
 
-    //Saída
 
 </script>

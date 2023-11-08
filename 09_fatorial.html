@@ -5,6 +5,7 @@
     */
 
     //Entrada
+    const numero = Number(prompt(`Informe um numero`))
 
     //Processamento
     function fatorial(numero) {
@@ -14,7 +15,7 @@
             return numero * fatorial(numero - 1);
         }
     }
-    let resultado = fatorial(5);
+    let resultado = fatorial(numero);
 
     //Saida
     alert(resultado);
