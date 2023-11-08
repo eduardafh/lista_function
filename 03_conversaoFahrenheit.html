@@ -6,11 +6,14 @@
     */
 
     //Entrada
-
+    const grausC = Number(prompt(`Quanto garus celsius esta agr?`))
+    let grausF = (9 * grausC + 160) / 5
 
     //Processamento
-
+    function conversao (grausC, grausF) {
+        alert(`${grausC} graus celsius sao ${grausF} graus fahrenheit`)
+    }
 
     //Saída
-
+    conversao(grausC, grausF)
 </script>

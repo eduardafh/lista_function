@@ -6,11 +6,20 @@
     */
 
     //Entrada
-
+    const num = Number(prompt(`Informe um nymero inteiro`))
+    let cubo = 3
 
     //Processamento
-
+    function calcular(num, cubo) {
+        if(Number.isInteger(num)){
+            num = num ** cubo
+            alert(num)
+        }
+        else{
+            alert(`Este não é um número inteiro`)
+        }
+    }
 
     //Saída
-
+    calcular(num, cubo)
 </script>
