@@ -6,17 +6,21 @@
     */
 
     //Entrada
-    const frase = prompt(`Informe uma frase`).trim().toLowerCase()
-    const letra = prompt(`Informe uma letra`).trim()
-    let quantidadeLetra = 0
+    const frase = prompt(`Informe uma frase`).toLowerCase();
+    const letra = prompt(`Informe uma letra`).toLowerCase();
+    quantidadeLetra = 0;
 
     //Processamento
     function contarLetra() {
-        for (const letra of frase) {
-            
+        for (const item of frase ) {
+            if(item == letra){
+            quantidadeLetra++
+            };
         }
+        return quantidadeLetra;
     }
 
     //Saída
-
+    alert(`A quantidade de letras ${letra}S eh de ${contarLetra()}`);
+    
 </script>

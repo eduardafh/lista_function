@@ -5,11 +5,19 @@
     */
 
     //Entrada
-    
+    const num = Number(prompt(`Informe um numero`))
 
     //Processamento
-
+    function vereficarPrimo (num) {
+        if(num % 2 == 0 || num % 4 == 0 || num % 8 == 0){
+            alert(`O numero ${num} nao eh um numero primo`)
+        }
+        else{
+            alert(`o numero ${num} eh um numero primo`)
+        }
+    }
 
     //Saída
-
+    vereficarPrimo (num)
+ 
 </script>
